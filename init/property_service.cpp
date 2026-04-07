@@ -1154,6 +1154,7 @@ static void SetIntegrityProps() {
     bool is_debuggable = android::base::GetBoolProperty("ro.debuggable", false);
 
     InitPropertySet("init.svc.adbd", "stopped");
+    InitPropertySet("ro.crypto.state", "encrypted");
 
     if (is_debuggable)
             return;
